@@ -13,7 +13,7 @@ AIDONE 是一份面向产品方的 AI 代码验收协议。它给创业者、产
 没用 AIDONE 之前，AI agent 收尾大概长这样：
 
 ```text
-完成了，settings 页面我做好了，应该都能用。
+完成了。Settings 页面已经实现，可以使用。
 ```
 
 用了 AIDONE 之后，同一个交付应该长这样：
@@ -77,6 +77,16 @@ AIDONE 问的是："产品负责人在不读每一行代码的情况下，能不
 它不能代替资深工程师的人工 review。它是一条务实的验收线，让 AI agent 主动报风险、给证据、说清楚哪些没跑。
 
 ## 上手
+
+最简单的方式：把这个仓库地址扔给你的 AI 工具，让它自己装。
+
+```text
+帮我把 https://github.com/nanami-he/aidone 装到当前项目里。
+```
+
+Claude Code、Cursor、Codex、Aider 这类工具能直接读 GitHub URL，会把 AIDONE 协议文件抓下来、放到合适的位置、并把那段使用提示写进你的 `AGENTS.md` / `CLAUDE.md`。
+
+想手动来也行：
 
 把 [`AIDONE.zh-CN.md`](./AIDONE.zh-CN.md) 复制到你的项目根目录。
 
@@ -147,8 +157,7 @@ AIDONE 属于 AI 时代正在形成的一组根目录文件：
 | `README.md` | 人 | 这是个什么项目 |
 | `AGENTS.md` | coding agent | 在这个仓库里怎么工作 |
 | `DESIGN.md` | design agent | 这个产品该长什么样、给人什么感觉 |
-| `llms.txt` | 外部 LLM | 哪些项目文档是关键的 |
-| `AIDONE.md` | AI coding agent 和 reviewer | "完成了"得证明什么 |
+| `AIDONE.md` | coding agent 和审查者 | "完成了"得证明什么 |
 
 ## 许可
 

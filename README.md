@@ -13,7 +13,7 @@ The core file is [`AIDONE.md`](./AIDONE.md): a short checklist you can put in a 
 Without AIDONE, an AI agent may end a task like this:
 
 ```text
-Done. I implemented the settings page and everything should work now.
+Done. The settings page is implemented and ready to use.
 ```
 
 With AIDONE, the same handoff should look more like this:
@@ -77,6 +77,16 @@ Use AIDONE if you:
 It is not a replacement for senior engineering review. It is a practical acceptance bar that makes AI agents report risk, evidence, and skipped checks.
 
 ## Quick Start
+
+The easiest way: hand this repo URL to your AI tool and let it install itself.
+
+```text
+Install https://github.com/nanami-he/aidone into my current project.
+```
+
+Claude Code, Cursor, Codex, Aider, and similar tools can read a GitHub URL, fetch the AIDONE files, drop them where they belong, and add the usage prompt to your `AGENTS.md` / `CLAUDE.md`.
+
+If you prefer to do it manually:
 
 Copy [`AIDONE.md`](./AIDONE.md) into your project root.
 
