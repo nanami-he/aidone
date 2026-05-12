@@ -19,12 +19,15 @@ Done. The settings page is implemented and ready to use.
 With AIDONE, the same handoff should look more like this:
 
 ```text
-Product result: settings page now lets users export data and clear local data.
-Files changed: SettingsView.tsx, db/export.ts, copy.ts.
-AIDONE: P0 passed for secrets and input handling. P1 gap: clear-data action needs a second confirmation. Tests not added because this project has no test runner.
-Verification: pnpm build passed. pnpm lint failed with 2 existing errors unrelated to this change.
-Manual check: open Settings -> Export Data -> confirm JSON downloads.
-Remaining risk: destructive clear-data flow should be tightened before sharing with users.
+What the user sees: from the Settings page, users can now export their data as a JSON file.
+Files touched: SettingsView.tsx, db/export.ts, copy.ts.
+AIDONE check:
+- Safety (P0): pass. No passwords or keys added to the code; bad input won't crash the app.
+- Product quality (P1): one gap — "clear data" is a one-tap delete and still needs a second confirmation.
+- Risk (P2): not applicable (this is a local export, not a production change).
+Checks run: project builds. Style check fails on 2 older files, unrelated to this change.
+How to verify yourself: open Settings -> Export Data, confirm the JSON file downloads.
+Remaining risk: "clear data" is a one-way delete — should be tightened before real users see it.
 ```
 
 The point is not longer reporting. The point is evidence.
