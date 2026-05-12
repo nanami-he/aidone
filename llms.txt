@@ -1,0 +1,27 @@
+# AIDONE
+
+> A product-facing acceptance protocol for AI-generated code. AIDONE helps founders, product people, designers, creators, and solo builders verify that AI-coded software is safe, maintainable, testable, and ready to hand to users.
+
+## Core Docs
+
+- [README](./README.md): Project overview, positioning, and quick start.
+- [AIDONE](./AIDONE.md): English core acceptance protocol.
+- [AIDONE Chinese](./AIDONE.zh-CN.md): Chinese core acceptance protocol.
+
+## Examples
+
+- [AGENTS Example](./examples/AGENTS.md): Minimal AGENTS.md snippet for projects using AIDONE.
+- [CLAUDE Example](./examples/CLAUDE.md): Minimal Claude Code project instruction.
+- [Review Prompt](./examples/review-prompt.md): Prompt for reviewing a project with AIDONE.
+- [Delivery Template](./examples/delivery-template.md): Final response template for AI coding agents.
+
+## Checklists
+
+- [Security](./checklists/security.md): Additional security acceptance checks.
+- [i18n](./checklists/i18n.md): User-facing text and localization acceptance checks.
+- [Accessibility](./checklists/accessibility.md): Basic accessibility acceptance checks.
+- [Testing](./checklists/testing.md): Behaviour-focused testing acceptance checks.
+
+## References
+
+- [Sources](./references/sources.md): Source map and related AI-era project file standards.
