@@ -33,13 +33,17 @@ AI agents are good at saying "done". But working code can still miss basic produ
 
 Before:
 
-"Done. I implemented it and everything should work now."
+> Done. I implemented it and everything should work now.
 
 After AIDONE:
 
-"Build passed. Lint failed. No tests exist. P0 security passed. P1 gap: error state missing. Manual check: open Settings -> Export Data."
+> Build passed. Lint failed on 2 unrelated files. No tests exist in this project.
+> P0 safety: pass.
+> P1 gap: error state missing on the export view.
+> Manual check: Settings → Export Data → confirm JSON downloads.
+> Remaining risk: destructive clear-data action still needs a second confirmation.
 
-AIDONE turns those hidden engineering expectations into explicit checks.
+Same task, same agent. AIDONE turns those hidden engineering expectations into explicit checks.
 
 For founders, product people, designers, creators, and solo builders who vibe code but don't review every line of code.
 
@@ -62,7 +66,13 @@ AI 很会说"完成了"。
 
 用了 AIDONE 之后：
 
-> build 通过，lint 失败，没有测试。P0 安全项通过。P1 缺口：错误状态还没做。手动验收：打开 Settings -> Export Data，确认 JSON 下载。
+> build 通过，lint 在两个无关文件上失败，项目里没有测试。
+> P0 安全项：通过。
+> P1 缺口：导出页缺一个错误状态。
+> 手动验收：Settings → Export Data → 确认 JSON 下载。
+> 残余风险：清除数据是破坏性操作，还需要二次确认。
+
+同一个任务，同一个 agent。区别就在"要不要给证据"。
 
 `AIDONE.md` 做的事很简单：
 
