@@ -1,3 +1,5 @@
+**English** | [简体中文](./README.zh-CN.md)
+
 # AIDONE
 
 **Don't trust "done". Ask for evidence.**
