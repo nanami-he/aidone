@@ -30,7 +30,7 @@ How to verify yourself: open Settings -> Export Data, confirm the JSON file down
 Remaining risk: "clear data" is a one-way delete — should be tightened before real users see it.
 ```
 
-The point is not longer reporting. The point is evidence.
+Not more words. The AI should brief you the way an engineer briefs a non-technical founder — what changed, what was checked, what risk remains.
 
 ## Why This Exists
 
