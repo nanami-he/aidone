@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node (in case a future scaffolding tool lands here)
+node_modules/
+.npm
+.pnpm-store/
+
+# Logs and local scratch
+*.log
+.cache/
+tmp/
+.tmp/
