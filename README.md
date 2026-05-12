@@ -157,8 +157,11 @@ AIDONE fits into the emerging set of AI-era project files:
 | `README.md` | Humans | What this project is |
 | `AGENTS.md` | Coding agents | How to work in this repository |
 | `DESIGN.md` | Design agents | How the product should look and feel |
-| `llms.txt` | External LLMs | Which project docs matter |
 | `AIDONE.md` | AI coding agents and reviewers | What "done" must prove |
+
+## Acknowledgements
+
+AIDONE was iterated through ongoing conversations with Claude (Anthropic). A protocol that asks AI agents for evidence felt right to build alongside one — the loop is part of the point.
 
 ## License
 
