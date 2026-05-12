@@ -42,9 +42,9 @@ Manual check: [one or two steps the user can run to verify]
 Filled example:
 
 ```md
-Evidence: pnpm test settings/export → 4/4 pass; pnpm build → ok.
-Gaps: P1 empty state for "no settings yet" not implemented; no load test for >10MB exports.
-Manual check: sign in, open Settings → Export Data, confirm JSON downloads and contains only your account.
+Evidence: pnpm build -> ok; pnpm lint -> failed on 2 existing files.
+Gaps: P1 export error state missing; no automated tests in this project.
+Manual check: open Settings -> Export Data, confirm JSON downloads.
 ```
 
 Rules:

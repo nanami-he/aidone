@@ -350,6 +350,36 @@ Agents should use this format after coding tasks:
 [None, or specific unverified paths.]
 ```
 
+Filled example:
+
+```md
+## Product Result
+
+Settings now lets users export local data as JSON.
+
+## Files Changed
+
+- `src/components/SettingsView.tsx`: adds the export action and user-facing button.
+- `src/lib/db/export.ts`: collects local records into a JSON-safe export shape.
+- `src/lib/copy.ts`: stores the new Settings copy in the shared copy layer.
+
+## AIDONE Check
+
+- P0 safety/correctness: pass. No secrets added; export only reads local user data.
+- P1 product quality: partial. Copy is centralized and build passes, but export error state is still missing.
+- P2 risk areas: not applicable for this local-only export path.
+
+## Verification
+
+- `pnpm build`: passed.
+- `pnpm lint`: failed on 2 existing files unrelated to this change.
+- Manual check: Settings -> Export Data downloads a JSON file.
+
+## Remaining Risk
+
+Clear Data is still a destructive action and should get a second confirmation before broader user testing.
+```
+
 ## How To Use
 
 For normal work:

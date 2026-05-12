@@ -350,6 +350,36 @@ AI 完成代码任务后应使用：
 [没有，或列出具体未验证路径。]
 ```
 
+填好的例子：
+
+```md
+## Product Result
+
+Settings 现在可以把本地数据导出为 JSON。
+
+## Files Changed
+
+- `src/components/SettingsView.tsx`: 增加导出按钮和用户操作入口。
+- `src/lib/db/export.ts`: 把本地记录整理成可导出的 JSON 结构。
+- `src/lib/copy.ts`: 把新的 Settings 文案放进共享文案层。
+
+## AIDONE Check
+
+- P0 safety/correctness: 通过。没有新增密钥；导出只读取当前本地用户数据。
+- P1 product quality: 部分通过。文案已集中管理，build 通过，但导出失败时的错误状态还缺。
+- P2 risk areas: 不适用。当前是本地单机导出路径。
+
+## Verification
+
+- `pnpm build`: 通过。
+- `pnpm lint`: 在 2 个无关旧文件上失败。
+- Manual check: Settings -> Export Data，可以下载 JSON 文件。
+
+## Remaining Risk
+
+Clear Data 仍然是破坏性操作，在扩大用户测试前应该加二次确认。
+```
+
 ## 用法
 
 正常产品工作：
