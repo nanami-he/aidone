@@ -6,7 +6,7 @@
 
 AIDONE 是一份面向产品方的 AI 代码验收协议。它给创业者、产品人、设计师、创作者、独立开发者用，让你能在不看每一行代码的情况下，判断 AI 写出来的代码是不是真的可以交给用户。
 
-核心文件是 [`AIDONE.md`](./AIDONE.md)：一份放在项目根目录的清单，让 AI coding agent 在说"完成了"之前，按它来交付。协议本身保持英文一份——这一档文件（类似 `llms.txt`、`AGENTS.md`）业界惯例都是单语英文，AI agent 读英文也更稳。
+核心文件是 [`AIDONE.md`](./AIDONE.md)：一份放在项目根目录的清单，让 AI coding agent 在说"完成了"之前，按它来交付。协议本身保持英文一份——这一档文件（类似 `AGENTS.md`、`CLAUDE.md`、Cursor rules）业界惯例都是单语英文，AI agent 读英文也更稳。
 
 ## 前后对比
 
