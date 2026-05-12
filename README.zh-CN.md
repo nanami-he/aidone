@@ -159,10 +159,6 @@ AIDONE 属于 AI 时代正在形成的一组根目录文件：
 | `DESIGN.md` | design agent | 这个产品该长什么样、给人什么感觉 |
 | `AIDONE.md` | coding agent 和审查者 | "完成了"得证明什么 |
 
-## 致谢
-
-AIDONE 是和 Claude（Anthropic）反复对谈打磨出来的。一个让 AI agent 给证据的协议，是和一个 AI agent 一起做的——这个回路本身就是项目的一部分。
-
 ## 许可
 
 MIT

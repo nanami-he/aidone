@@ -159,10 +159,6 @@ AIDONE fits into the emerging set of AI-era project files:
 | `DESIGN.md` | Design agents | How the product should look and feel |
 | `AIDONE.md` | AI coding agents and reviewers | What "done" must prove |
 
-## Acknowledgements
-
-AIDONE was iterated through ongoing conversations with Claude (Anthropic). A protocol that asks AI agents for evidence felt right to build alongside one — the loop is part of the point.
-
 ## License
 
 MIT
