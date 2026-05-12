@@ -6,6 +6,27 @@ AIDONE is a product-facing acceptance protocol for AI-generated code. It helps f
 
 The core file is [`AIDONE.md`](./AIDONE.md): a short checklist you can put in a project root and ask your AI coding agent to follow before it claims work is done.
 
+## Before And After
+
+Without AIDONE, an AI agent may end a task like this:
+
+```text
+Done. I implemented the settings page and everything should work now.
+```
+
+With AIDONE, the same handoff should look more like this:
+
+```text
+Product result: settings page now lets users export data and clear local data.
+Files changed: SettingsView.tsx, db/export.ts, copy.ts.
+AIDONE: P0 passed for secrets and input handling. P1 gap: clear-data action needs a second confirmation. Tests not added because this project has no test runner.
+Verification: pnpm build passed. pnpm lint failed with 2 existing errors unrelated to this change.
+Manual check: open Settings -> Export Data -> confirm JSON downloads.
+Remaining risk: destructive clear-data flow should be tightened before sharing with users.
+```
+
+The point is not longer reporting. The point is evidence.
+
 ## Why This Exists
 
 AI can write code that runs.
@@ -24,6 +45,22 @@ A feature can appear to work while still missing basic product engineering defau
 - "ship-ready" is claimed without build, lint, or test evidence
 
 AIDONE turns those hidden engineering expectations into explicit acceptance checks.
+
+## Acceptance, Not Code Review
+
+AIDONE is not another engineering best-practices list.
+
+Code review asks: "Is this code well written?"
+
+AIDONE asks: "Can a product owner accept this AI-generated work without reading every line of code?"
+
+That is a different job. AIDONE turns engineering concerns into product-facing questions:
+
+- If we change language later, where does copy live?
+- If the API fails, what does the user see?
+- If a normal user tries the admin path, what blocks them?
+- If the agent says tests pass, which command proves it?
+- If a destructive action exists, what prevents accidental damage?
 
 ## Who It Is For
 
@@ -61,6 +98,20 @@ When asking an AI agent to implement code:
 
 ```text
 Implement this using AIDONE. At the end, report files changed, checks run, P0/P1 acceptance status, manual verification steps, and remaining risk.
+```
+
+For short replies, ask for the compact handoff:
+
+```text
+Use AIDONE, but keep the final handoff compact: evidence, gaps, manual check.
+```
+
+Expected shape:
+
+```text
+Evidence: pnpm build passed; pnpm lint failed on 2 existing files.
+Gaps: no tests; destructive action still needs second confirmation.
+Manual check: Settings -> Export Data downloads JSON.
 ```
 
 ## The File Set

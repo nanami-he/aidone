@@ -31,6 +31,14 @@ It's a checklist for accepting AI-generated code before you ship it.
 
 AI agents are good at saying "done". But working code can still miss basic product engineering defaults: secrets, auth, i18n, loading/error states, validation, tests, docs, and verification evidence.
 
+Before:
+
+"Done. I implemented it and everything should work now."
+
+After AIDONE:
+
+"Build passed. Lint failed. No tests exist. P0 security passed. P1 gap: error state missing. Manual check: open Settings -> Export Data."
+
 AIDONE turns those hidden engineering expectations into explicit checks.
 
 For founders, product people, designers, creators, and solo builders who vibe code but don't review every line of code.
@@ -47,6 +55,14 @@ AI 很会说"完成了"。
 但代码能跑，不代表它真的适合交给用户。
 
 它可能没有 i18n、没有 loading / empty / error、没有权限边界、没有输入校验、没有测试、没有构建证据，甚至把错误堆栈直接展示给用户。
+
+以前 AI 交付：
+
+> 完成了，应该可以用了。
+
+用了 AIDONE 之后：
+
+> build 通过，lint 失败，没有测试。P0 安全项通过。P1 缺口：错误状态还没做。手动验收：打开 Settings -> Export Data，确认 JSON 下载。
 
 `AIDONE.md` 做的事很简单：
 

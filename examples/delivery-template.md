@@ -26,3 +26,13 @@ AI coding agents should use this shape after completing implementation work.
 
 [None, or specific unverified paths.]
 ```
+
+## Compact Version
+
+Use this when the user wants short handoffs:
+
+```md
+Evidence: [commands/manual checks and results]
+Gaps: [failed checks, skipped checks, or remaining risks]
+Manual check: [one or two user-verifiable steps]
+```
