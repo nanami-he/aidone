@@ -21,3 +21,6 @@ node_modules/
 .cache/
 tmp/
 .tmp/
+
+# Private operational notes (not for public repo)
+LAUNCH_STRATEGY.md
