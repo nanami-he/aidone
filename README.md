@@ -129,8 +129,7 @@ Manual check: Settings -> Export Data downloads JSON.
 ## The File Set
 
 ```text
-AIDONE.md                 English core protocol
-AIDONE.zh-CN.md           Chinese core protocol
+AIDONE.md                 Core acceptance protocol
 llms.txt                  LLM-readable project index
 examples/AGENTS.md        Example agent instruction
 examples/CLAUDE.md        Example Claude Code instruction

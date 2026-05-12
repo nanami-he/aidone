@@ -5,8 +5,7 @@
 ## Core Docs
 
 - [README](./README.md): Project overview, positioning, and quick start.
-- [AIDONE](./AIDONE.md): English core acceptance protocol.
-- [AIDONE Chinese](./AIDONE.zh-CN.md): Chinese core acceptance protocol.
+- [AIDONE](./AIDONE.md): Core acceptance protocol.
 
 ## Examples
 
